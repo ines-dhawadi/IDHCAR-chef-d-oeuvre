@@ -1,0 +1,3 @@
+[submodule "front-end-chef-d-oeuvre"]
+	path = front-end-chef-d-oeuvre
+	url = https://github.com/ines-dhawadi/front-end-chef-d-oeuvre.git
