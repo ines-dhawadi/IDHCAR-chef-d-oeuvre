@@ -55,6 +55,10 @@ Ntelf:{
 adress:{
     type:String,
     required : true
+},
+gouvernorat:{
+    type:String,
+    required : true
 }
 
 

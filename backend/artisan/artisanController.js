@@ -28,8 +28,8 @@ res.json(artisan)
      image3= req.body.image3 ,
      image4= req.body.image4 ,
      Ntelf= req.body. Ntelf,
-     adress= req.body.adress 
-    
+     adress= req.body.adress ,
+     gouvernorat=req.body.adress
      try{
          const artisan = new artisanModel({
              nom,
@@ -44,7 +44,8 @@ res.json(artisan)
              image3,
              image4,
              Ntelf,
-             adress
+             adress,
+             gouvernorat
 
               })
 
