@@ -1,6 +1,8 @@
 const USER = require("./clientModel");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+
+
 module.exports = {
   //add_User
 
@@ -9,7 +11,7 @@ module.exports = {
     const prenom = req.body.prenom;
     const telephone = req.body.telephone;
     const email = req.body.email;
-
+    const image = req.body.image
     const salt = await bcrypt.genSalt(10);
     const hashedPasswor = await bcrypt.hash(req.body.password, salt);
     const password = hashedPasswor;
@@ -19,6 +21,7 @@ module.exports = {
         prenom,
         telephone,
         email,
+        image,
         password,
       });
       await User.save();
