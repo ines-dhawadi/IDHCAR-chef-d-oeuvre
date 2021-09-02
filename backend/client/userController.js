@@ -61,8 +61,8 @@ module.exports={
 
       follow: async (req, res) => {
         if (
-          !ObjectID.isValid(req.params.id) ||
-          !ObjectID.isValid(req.body.idToFollow)
+           !ObjectID.isValid(req.params.id) ||
+           !ObjectID.isValid(req.body.idToFollow)
         )
           return res.status(400).send("ID unknown : " + req.params.id);
       
