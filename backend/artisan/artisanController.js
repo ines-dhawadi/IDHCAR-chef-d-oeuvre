@@ -14,6 +14,19 @@ res.json(artisan)
     
  },
 
+ // get by id
+ getArtisanById:async(req,res)=>{
+    try {
+      const publication = await PUBLICATION.findById(req.params.id);
+      res.json(publication);
+  }
+  catch (error) {
+      console.error(error.message);
+      res.status(500).send("server error");
+    }
+  },
+
+
  // add artisan 
  addArtisan: async (req,res)=>{
      const nom = req.body.nom,

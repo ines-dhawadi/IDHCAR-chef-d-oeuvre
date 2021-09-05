@@ -36,7 +36,7 @@ module.exports={
         let errors = { format: '', maxSize: ""};
       
         if (err.message.includes('invalid file'))
-          errors.format = "Format incompatabile";
+          errors.format = "Format incompatabile (le format doit être jpg, png ou jpeg )";
       
         if (err.message.includes('max size'))
           errors.maxSize = "Le fichier dépasse 500ko";

@@ -64,5 +64,8 @@ gouvernorat:{
 
 
 
-})
+},
+{
+    timestamps: true,
+  })
 module.exports = artisan = mongoose.model('artisan',artisanSchema)

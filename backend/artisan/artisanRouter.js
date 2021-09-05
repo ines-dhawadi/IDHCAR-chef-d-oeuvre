@@ -4,6 +4,7 @@ const artisonController=require('./artisanController');
 
 
 router.get('/get',artisonController.getArtisan)
+router.get('/get/:id',artisonController.getArtisanById)
 router.post('/add', artisonController.addArtisan)
 router.delete('/:id/delete',artisonController.deleteArtisan)
 router.put('/:id/update',artisonController.updateArtisan)
